@@ -32,7 +32,14 @@
       #output {
         margin: 20px auto;
         padding: 20px;
-        background-color: grey;
+        background-color: rgb(205, 251, 129);
+        width: 100%;
+      }
+
+      #output2 {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgb(255, 254, 173);
         width: 100%;
       }
     </style>
@@ -43,7 +50,10 @@
       <input id="my-input" />
       <button id="my-button">submit</button>
       <p>output:</p>
-      <div id="output"></div>
+      <div id="output">
+        Hello! Welcome to a game of Black Jack. Click submit to start!
+      </div>
+      <div id="output2">Cards will be shown here!</div>
     </div>
     <script src="script.js"></script>
     <script>
@@ -57,6 +67,7 @@
         var output = document.querySelector("#output");
 
         output.innerHTML = result;
+        output2.innerHTML = scoreBoard;
 
         input.value = "";
       });
